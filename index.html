@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="welcome">
+        <div class="logo">✦</div>
+        <h1>Join Us Today!</h1>
+        <p>Create your account and start your journey.</p>
+
+        <div class="benefits">
+            <p>⚡ Fast and secure</p>
+            <p>🛡️ Your data matters</p>
+            <p>💜 Built for you</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <p class="subtitle">Enter your details below.</p>
+
+        <form id="registrationForm" novalidate>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName"
+                        placeholder="Enter your name" required>
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" id="username"
+                        placeholder="Choose a username" required>
+                    <small class="error" id="usernameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email"
+                        placeholder="you@example.com" required>
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone"
+                        placeholder="10-digit mobile number" required>
+                    <small class="error" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <div class="password-box">
+                        <input type="password" id="password"
+                            placeholder="Create password" required>
+                        <button type="button" class="toggle"
+                            data-target="password">Show</button>
+                    </div>
+                    <div class="strength-track">
+                        <div id="strengthBar"></div>
+                    </div>
+                    <small id="strengthText">Password strength</small>
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <div class="password-box">
+                        <input type="password" id="confirmPassword"
+                            placeholder="Repeat password" required>
+                        <button type="button" class="toggle"
+                            data-target="confirmPassword">Show</button>
+                    </div>
+                    <small class="error" id="confirmError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" required>
+                    <small class="error" id="dobError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country *</label>
+                    <select id="country" required>
+                        <option value="">Select country</option>
+                        <option value="India">India</option>
+                        <option value="USA">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Gender</label>
+                    <div class="options">
+                        <label><input type="radio" name="gender"
+                            value="Male"> Male</label>
+                        <label><input type="radio" name="gender"
+                            value="Female"> Female</label>
+                        <label><input type="radio" name="gender"
+                            value="Other"> Other</label>
+                        <label><input type="radio" name="gender"
+                            value="Prefer not to say">
+                            Prefer not to say</label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Interests</label>
+                    <div class="options">
+                        <label><input type="checkbox" name="hobby"
+                            value="Coding"> Coding</label>
+                        <label><input type="checkbox" name="hobby"
+                            value="Gaming"> Gaming</label>
+                        <label><input type="checkbox" name="hobby"
+                            value="Music"> Music</label>
+                        <label><input type="checkbox" name="hobby"
+                            value="Travel"> Travel</label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="bio">About You (Optional)</label>
+                    <textarea id="bio" rows="3" maxlength="200"
+                        placeholder="Tell us something about yourself..."
+                    ></textarea>
+                    <small><span id="charCount">0</span>/200 characters</small>
+                </div>
+            </div>
+
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="terms">
+                    I agree to the Terms and Conditions *
+                </label>
+                <small class="error" id="termsError"></small>
+            </div>
+
+            <div id="formMessage" role="status" aria-live="polite"></div>
+
+            <div class="buttons">
+                <button type="submit" class="register-btn">
+                    Create Account
+                </button>
+                <button type="reset" class="reset-btn">
+                    Reset
+                </button>
+            </div>
+
+            <p class="login">
+                Already have an account?
+                <a href="#" id="loginLink">Login</a>
+            </p>
+        </form> 
+</div>
+
+</body>
+</html>
