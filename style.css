@@ -41,15 +41,15 @@ body {
     margin-bottom: 20px;
 }
 
-.welcome h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
+        .welcome h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
 
-.welcome > p {
-    line-height: 1.7;
-    color: #dddfff;
-}
+        .welcome > p {
+            line-height: 1.7;
+            color: #dddfff;
+        }
 
 .benefits {
     margin-top: 35px;
